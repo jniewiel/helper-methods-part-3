@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
-    <meta charset="utf-8">
-
-    <!-- Make it responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    
-
     <title>Helper Methods Part 3</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -25,13 +17,8 @@
 
     <div class="container mt-3">
       <%= render "shared/flash_messages" %>
+
+      <%= yield %>
     </div>
-
-    <%= yield %>
-  </div>
-</div>
-</nav>
-
-<%= yield %>
-</body>
+  </body>
 </html>
