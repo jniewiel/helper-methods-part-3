@@ -11,5 +11,9 @@
 <hr>
 
 <div class="row">
-  <%= render @movies %>
+  <% @movies.each do |movie| %>
+    <div class="col-md-3">
+      <%= render partial: "movies/movie_card", locals: { baz: movie } %>
+    </div>
+  <% end %>
 </div>
